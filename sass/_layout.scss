@@ -109,6 +109,11 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    div{
+        perspective: 500px;
+    }
+
     section{
         display: flex;
         flex-direction: row;
@@ -172,7 +177,6 @@ p {
     align-items: center;
 
     h3{
-        padding: 5px;
+        padding: 1rem 0 1rem 0;
     }
 }
-

@@ -14,12 +14,25 @@ Animation de la page accueil
   animation: anim-entete 1s 1s both cubic-bezier(0.12, 0.75, 0.49, 1.08);
 }
 
+h1 {
+  animation: anim-h1 3.5s linear;
+}
+
 @keyframes anim-entete {
   0% {
     transform: translateX(1000px);
   }
   100% {
     transform: translateX(0px);
+  }
+}
+
+@keyframes anim-h1 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }
 
@@ -183,6 +196,10 @@ p {
   align-items: center;
 }
 
+.entete div {
+  perspective: 500px;
+}
+
 .entete section {
   display: flex;
   flex-direction: row;
@@ -236,6 +253,6 @@ p {
 }
 
 .principal h3 {
-  padding: 5px;
+  padding: 1rem 0 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */
